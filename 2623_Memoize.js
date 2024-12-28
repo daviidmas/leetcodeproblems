@@ -5,7 +5,6 @@
 function memoize(fn) {
     cache = {}
     return function(...args) {
-        console.log(cache)
         if(args in cache) {
             return cache[args]
         } else {
